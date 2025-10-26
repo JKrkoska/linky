@@ -8,9 +8,16 @@
   <meta property="og:title" content="Ako si nastaviť hranice a nespáliť sa!">
   <meta property="og:description" content="Praktické spôsoby, ako si nastaviť hranice v práci aj v živote – bez výčitiek a bez vyhorenia.">
   <meta name="redirect-target" content="https://jaroslavkrkoska.spream.co/content/a5139c98-cb61-4701-91c3-e894d1041120">
-  <meta property="og:image" content="https://jkrkoska.github.io/linky/link008/work-life-balance.png?v=2">
-  <meta property="og:image:secure_url" content="https://jkrkoska.github.io/linky/link008/work-life-balance.png?v=2">
-  <meta property="og:url" content="https://jkrkoska.github.io/linky/link008/">
+
+  <!-- NOVÝ OG OBRÁZOK -->
+  <meta property="og:image" content="https://jkrkoska.github.io/linky/link008/og-hranice-01.png">
+  <meta property="og:image:secure_url" content="https://jkrkoska.github.io/linky/link008/og-hranice-01.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Dôležité pre FB cache -->
+  <meta property="og:url" content="https://jkrkoska.github.io/linky/link008/?v=2">
+
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Jaroslav Krkoška – Mentoring & Kurzy">
   <meta property="og:locale" content="sk_SK">
@@ -37,7 +44,6 @@
   </div>
 
   <script>
-    // fallback: keby si menil len meta a zabudol na tlačidlo
     var target = (document.querySelector('meta[name="redirect-target"]')||{}).content || '';
     var cta = document.getElementById('cta');
     if (cta && target) cta.href = target;
