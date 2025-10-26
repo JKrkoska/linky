@@ -12,7 +12,6 @@
   <meta property="og:image" content="https://jkrkoska.github.io/linky/link008/work-life-balance.png?v=1">
   <meta property="og:image:secure_url" content="https://jkrkoska.github.io/linky/link008/work-life-balance.png?v=1">
   <meta property="og:url" content="https://jkrkoska.github.io/linky/link008/">
-  <!-- === / === -->
 
   <!-- Ostatné OG + Twitter -->
   <meta property="og:type" content="website">
@@ -34,16 +33,20 @@
   <div class="card">
     <h1>Ako si nastaviť hranice a nespáliť sa!</h1>
     <p>Krátky blog pre podnikateľov: hranice v práci aj živote – bez vyhorenia.</p>
-    <a class="btn" id="cta" href="#">Pokračovať</a>
+    <a class="btn" id="cta"
+       href="https://jaroslavkrkoska.spream.co/content/a5139c98-cb61-4701-91c3-e894d1041120"
+       target="_self" rel="noopener">Otvoriť článok</a>
     <div class="hint">Ak sa stránka neotvorí, skopíruj link do prehliadača.</div>
   </div>
 
   <script>
-    var target = (document.querySelector('meta[name="redirect-target"]')||{}).content || '#';
+    // Fallback: ak by si niekedy zmenil URL len v meta, skript ju doplní aj na tlačidlo
+    var target = (document.querySelector('meta[name="redirect-target"]')||{}).content || '';
     var cta = document.getElementById('cta');
-    if (cta && target && target !== '#') cta.href = target;
-    // Voliteľné auto-presmerovanie (odkomentuj, ak chceš bez kliku):
-    // setTimeout(function(){ if (target && target !== '#') location.href = target; }, 400);
+    if (cta && target) cta.href = target;
+
+    // Voliteľné auto-presmerovanie (zapni odkomentovaním):
+    // if (target) setTimeout(function(){ location.href = target; }, 400);
   </script>
 </body>
 </html>
