@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- OG pre pekný náhľad na FB -->
   <title>Majiteľ mimo operatívy: ako prestať hasiť a začať viesť</title>
   <meta property="og:title" content="Majiteľ mimo operatívy: ako prestať hasiť a začať viesť">
   <meta property="og:description" content="Mini-návod pre majiteľov, ako vystúpiť z operatívy a začať viesť tím bez neustáleho hasenia.">
@@ -18,8 +17,8 @@
   <meta property="og:locale" content="sk_SK">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Kam presmerovať (zmeň ak potrebuješ) -->
-  <meta name="redirect-target" content="https://jaroslavkrkoska.spream.co/pages/home">
+  <!-- Presné presmerovanie -->
+  <meta name="redirect-target" content="https://jaroslavkrkoska.spream.co/content/ee37c0bd-4a3b-4689-829d-2e75789124ae">
 
   <style>
     body { margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial; background:#0b1220; color:#fff; display:flex; min-height:100vh; align-items:center; justify-content:center; }
@@ -29,9 +28,8 @@
 </head>
 <body>
   <div class="wrap">
-    <div>Presmerovávam… ak sa nič nedeje, klikni:
-      <br><a id="fallback" href="#">otvoriť cieľ</a>
-    </div>
+    Presmerovávam… ak sa nič nedeje, klikni:
+    <br><a id="fallback" href="#">otvoriť cieľ</a>
   </div>
 
   <script>
@@ -40,8 +38,7 @@
       var fallback = document.getElementById('fallback');
       if (fallback && target) fallback.href = target;
       if (target && target !== '#') {
-        // okamžité presmerovanie bez medzikroku
-        window.location.replace(target);
+        window.location.replace(target); // okamžité presmerovanie
       }
     })();
   </script>
